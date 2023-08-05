@@ -9,6 +9,7 @@ int _print_unsigned(va_list args, char buffer[], int flags, int width, int prec,
 {
 int n = BUFF_SIZE - 2;
 unsigned long int num = va_arg(args, unsigned long int);
+num = convert_size_unsigned(num, size);
 
 if (num == 0)
 {

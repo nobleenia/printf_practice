@@ -22,7 +22,7 @@ int _print_string(va_list args, char buffer[], int flags, int width, int prec, i
         str = "(null)";
         if (prec >= 6)
         {
-            str = " ";
+            str = "      ";
         }
     }
     while (str[len] != '\0')
