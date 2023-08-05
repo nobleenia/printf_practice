@@ -28,7 +28,7 @@ for (i = 1; i < 32; i++)
     arr[i] = (n / m) % 2;
 }
 
-for ( i = 0; sum = 0; ret_val = 0; i < 32; i++)
+for ( i = 0, sum = 0, ret_val = 0; i < 32; i++)
 {
     sum += arr[i];
     if (sum || i == 31)
@@ -38,5 +38,5 @@ for ( i = 0; sum = 0; ret_val = 0; i < 32; i++)
         ret_val++;
     }
 }
-return(ret_val)
+ return(ret_val);
 }

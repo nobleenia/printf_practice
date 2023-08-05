@@ -9,6 +9,7 @@ int _print_octal(va_list args, char buffer[], int flags, int width, int prec, in
 {
     int n = BUFF_SIZE - 2;
     unsigned long int num = va_arg(args, unsigned long int);
+    unsigned long int init_num = num;
 
     UNUSED(width);
 

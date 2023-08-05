@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 		}
 	}
 
-	print_buffer(buffer, &buffer_index);
+	_print_buffer(buffer, &buffer_index);
 
 	va_end(list);
 

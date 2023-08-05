@@ -17,11 +17,11 @@ int get_function(const char *format, int *index, va_list list, char buffer[], in
 		{'X', _print_hex_up}, {'p', _print_pointer}, {'S', print_non_printable},
 		{'r', _print_rev}, {'R', _print_rot13}, {'\0', NULL}
 	};
-	for (i = 0; format_types[i].format != '\0'; i++)
-		if (format[*ind] == format_types[i].fmt)
-			return (format_types[i].funct(list, buffer, flags, width, precision, size));
+	for (n = 0; format_types[n].format != '\0'; n++)
+		if (format[*index] == format_types[n].format)
+			return (format_types[n].funct(list, buffer, flags, width, precision, size));
 
-	if (format_types[i].format == '\0')
+	if (format_types[n].format == '\0')
 	{
 		if (format[*index] == '\0')
 			return (-1);

@@ -20,7 +20,7 @@ while (num > 0)
     buffer[n--] = (num % 10);
     num /= 10;
 }
-i++;
+n++;
 
-return (write_unsigned(0, n, buffer, flags, width, prec, size))
+return (write_unsigned(0, n, buffer, flags, width, prec, size));
 }

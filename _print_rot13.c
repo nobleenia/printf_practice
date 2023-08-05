@@ -30,7 +30,7 @@ int _print_rot13(va_list args, char buffer[], int flags, int width, int prec, in
 			if (in[j] == str[i])
 			{
 				n = out[j];
-				write(1, &x, 1);
+				write(1, &n, 1);
 				ret_val++;
 				break;
 			}
@@ -38,7 +38,7 @@ int _print_rot13(va_list args, char buffer[], int flags, int width, int prec, in
 		if (!in[j])
 		{
 			n = str[i];
-			write(1, &x, 1);
+			write(1, &n, 1);
 			ret_val++;
 		}
 	}

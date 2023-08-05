@@ -11,7 +11,7 @@ int write_spec_char(char c, char buffer[], int flags, int width, int prec, int s
     int n = 0;
 	char padding = ' ';
 
-	UNUSED(precision);
+	UNUSED(prec);
 	UNUSED(size);
 
 	if (flags & F_ZERO)

@@ -9,7 +9,7 @@ int _print_string(va_list args, char buffer[], int flags, int width, int prec, i
 {
     int len = 0;
     int n;
-    char *str = va_arg(types, char *);
+    char *str = va_arg(args, char *);
 
     UNUSED(buffer);
     UNUSED(flags);
@@ -38,7 +38,7 @@ int _print_string(va_list args, char buffer[], int flags, int width, int prec, i
         if (flags & F_MINUS)
         {
             write(1, &str[0], len);
-            for (n = width - length; n > 0; n--)
+            for (n = width - len; n > 0; n--)
             {
 				write(1, " ", 1);
             }

@@ -23,5 +23,5 @@ int write_spec_num(int is_negative, int index, char buffer[], int flags, int wid
 	else if (flags & F_SPACE)
 		extra_char = ' ';
 
-	return (write_num(ind, buffer, flags, width, prec, len, padding, extra_char));
+	return (write_num(index, buffer, flags, width, prec, len, padding, extra_char));
 }

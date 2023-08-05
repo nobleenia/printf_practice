@@ -38,7 +38,7 @@ int _print_pointer(va_list args, char buffer[], int flags, int width, int prec, 
 	if (flags & F_PLUS)
 		more_char = '+', len++;
 	else if (flags & F_SPACE)
-		more_char = ' ', len;
+		more_char = ' ', len++;
 
 	index++;
 

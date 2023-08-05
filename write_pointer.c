@@ -12,9 +12,9 @@ int write_pointer(char buffer[], int index, int len, int width, int flags, char 
 
 	if (width > len)
 	{
-		for (n = 3; i < width - len + 3; n++)
-			buffer[i] = padding;
-		buffer[i] = '\0';
+		for (n = 3; n < width - len + 3; n++)
+			buffer[n] = padding;
+		buffer[n] = '\0';
 		if (flags & F_MINUS && padding == ' ')
 		{
 			buffer[--index] = 'x';
@@ -45,5 +45,5 @@ int write_pointer(char buffer[], int index, int len, int width, int flags, char 
 	buffer[--index] = '0';
 	if (extra_char)
 		buffer[--index] = extra_char;
-	return (write(1, &buffer[index], BUFF_SIZE - ind - 1));
+	return (write(1, &buffer[index], BUFF_SIZE - index - 1));
 }
