@@ -18,7 +18,7 @@
 #define S_SHORT 1
 
 /**
- * struct fmt - Struct op
+ * struct format - Struct op
  *
  * @format: The format.
  * @funct: The function associated.
@@ -31,7 +31,7 @@ struct format
 
 
 /**
- * typedef struct fmt fmt_t - Struct op
+ * typedef struct format format_t - Struct op
  *
  * @format: The format.
  * @format_t: The function associated.

@@ -27,7 +27,7 @@ int _print_int(va_list args, char buffer[], int flags, int width, int prec, int 
         is_negative = 1;
     }
     
-    while (n > 0)
+    while (num > 0)
     {
         buffer[i--] = (num % 10) + '0';
         num /= 10;
